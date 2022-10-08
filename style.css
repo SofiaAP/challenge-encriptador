@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    min-height: 100vh;
+    padding: 20px 10px;
+    background-image: url('./degradado-difuminado-azul_3840x2400_xtrafondos.com.jpg');  
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+  }
+  
+  header {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  
+  main {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  section {
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .logo {
+    position: relative;
+  }
+  
+  .logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  textarea {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .warning-box {
+    text-align: center;
+    margin-block: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: .75rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .botones{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    border-radius: 7px;
+    transition: 1s all;
+    cursor: pointer
+  }
+  
+  .boton {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .encriptar{
+    color: white;
+    background: #0A3871;
+  }
+  .desencriptar{
+    color: darkblue;
+    background: #acbace;
+  }
+  
+  .informacion{
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  @media (min-width: 375px){
+    .botones {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 768px){
+    main{
+        flex-direction: row;
+    }
+  }
+  
